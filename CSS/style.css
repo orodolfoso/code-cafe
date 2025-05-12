@@ -52,7 +52,7 @@ header {
 }
 
 .logo-image {
-  width: 4.5rem;
+  width: 3.5rem;
   border-radius: 50%;
 }
 
@@ -103,4 +103,100 @@ header {
   transform: scale(1.05);
   transition-duration: 500ms;
   color: #fff;
+}
+
+/* Main */
+
+main {
+  min-height: 600px;
+  padding: 0 50px;
+  background-color: #270c03;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container-home {
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+}
+
+.text-home {
+  text-align: start;
+}
+
+.h1-text-home {
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.span-home {
+  color: #854d3d;
+}
+
+.button-home {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #854d3d, #4a1e1b);
+  border: 2px solid #854d3d;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.img-home {
+  width: 550px;
+  transform: scale(1.25);
+  animation: balanco 5s linear infinite;
+}
+
+@keyframes balanco {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Responsive Header */
+
+@media screen and (max-width: 719px) {
+  .logo a {
+    font-size: 1.4rem;
+  }
+
+  .menu-list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 429px) {
+  header {
+    padding: 0;
+  }
+  .logo a {
+    font-size: 1.5rem;
+  }
 }
