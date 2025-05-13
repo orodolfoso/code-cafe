@@ -265,6 +265,37 @@ main {
   transition: 2s;
 }
 
+footer {
+  background-color: #270c03;
+  min-height: 150px;
+  padding: 1rem;
+}
+
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-logo-img {
+  width: 120px;
+}
+
+.h2-footer {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.p-footer {
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin: 1rem;
+}
+
+/* _________________________Responsive website________________________ */
+
 /* Responsive Header */
 
 @media screen and (max-width: 719px) {
@@ -354,5 +385,37 @@ main {
 
   .img-home {
     width: 250px;
+  }
+}
+
+/* Responsive Section */
+
+@media screen and (max-width: 740px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+  }
+
+  .title-section-services {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 552px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3.8rem;
+  }
+
+  .title-section-services {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .title-section-services {
+    font-size: 1.5rem;
   }
 }
