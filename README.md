@@ -1,2 +1,2 @@
 Acesse:
-<a href="https://orodolfoso.github.io/code-cafe/">Projeto Cordel Moderno</a>
+<a href="https://orodolfoso.github.io/code-cafe/">Code Café</a>
